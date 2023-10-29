@@ -1,0 +1,23 @@
+.CardArea {
+  background-color: #06112f;
+}
+
+.Card {
+  background-color: #06112f;
+  border: 2px solid #0e2b7b;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #06112f;
+  margin-bottom: 0;
+  color: #68f3ff;
+}
+
+.bookButton {
+  background-color: #0e2b7b;
+}

@@ -22,7 +22,7 @@ export default function ServiceBox() {
             </Button>
           </Card.Body>
         </Card>
-        <Card className="Card">
+        <Card className="Card" style={{ marginBottom: 0 }}>
           <Card.Img variant="top" src={serviceImg} />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>

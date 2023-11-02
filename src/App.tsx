@@ -5,6 +5,7 @@ import NavComp from './components/NavComp';
 import WelcomeBanner from './components/WelcomeBanner';
 import ServiceBox from './components/ServiceBox';
 import OurWork from './components/OurWork';
+import ContactUs from './components/ContactUs';
 
 // TODO component up the cards
 
@@ -15,6 +16,7 @@ function App() {
       <WelcomeBanner />
       <ServiceBox />
       <OurWork />
+      <ContactUs />
     </div>
   );
 }

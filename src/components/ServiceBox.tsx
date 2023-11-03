@@ -37,7 +37,7 @@ export default function ServiceBox() {
         </Card>
       </CardGroup>
       {/* grabbing css from another comp. Change this to its own comp with own style. */}
-      <div className="image-outer-container" style={{ padding: 10, backgroundColor: '#06112f' }}>
+      <div className="image-outer-container" style={{ padding: 10, paddingBottom: 0, backgroundColor: '#06112f' }}>
         <div className="image-inner-container">
           <img src={AD} alt="Logo" className="cover-image" />
         </div>

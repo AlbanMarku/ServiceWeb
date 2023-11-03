@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavigationContainer } from '@react-navigation/native';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import NavComp from './components/NavComp';
 import WelcomeBanner from './components/WelcomeBanner';
@@ -33,14 +33,14 @@ import Socials from './components/Socials';
 function App() {
   return (
     <div className="App">
-      <NavigationContainer>
+      <Router>
         <NavComp />
         <WelcomeBanner />
         <Socials />
         <ServiceBox />
         <OurWork />
         <ContactUs />
-      </NavigationContainer>
+      </Router>
     </div>
   );
 }

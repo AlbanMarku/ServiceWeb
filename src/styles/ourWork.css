@@ -8,7 +8,7 @@ height: 600px; /* Maintain the aspect ratio */
 object-fit: cover;
 }
 
-h1 {
+.OurWork h1 {
     font-family: "Sometype Mono";
     text-align: center;
     padding: 20px;

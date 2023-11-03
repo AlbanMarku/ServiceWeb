@@ -9,7 +9,7 @@ export default function OurWork() {
   return (
     <div className="OurWork">
       <h1>OUR WORK</h1>
-      <Carousel className="custom-carousel">
+      <Carousel className="custom-carousel" fade>
         <Carousel.Item>
           <img src={Work1} alt="Example one" className="custom-carousel-image" />
         </Carousel.Item>

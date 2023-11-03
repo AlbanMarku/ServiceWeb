@@ -17,3 +17,14 @@
     color: #68f3ff;
     text-decoration: underline;
 }
+
+.ContactUs h1 {
+    font-family: "Sometype Mono";
+    text-align: center;
+    padding: 20px;
+    background-color: #06112f;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-weight: bold;
+    font-style: italic;
+}

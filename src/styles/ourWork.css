@@ -9,7 +9,7 @@ object-fit: cover;
 }
 
 .OurWork h1 {
-    font-family: "Sometype Mono";
+    font-family: "Titillium Web";
     text-align: center;
     padding: 20px;
     background-color: #06112f;
@@ -17,4 +17,6 @@ object-fit: cover;
     color: #68f3ff;
     font-weight: bold;
     font-style: italic;
+    font-size: 40px;
+
 }

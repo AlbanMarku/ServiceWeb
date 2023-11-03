@@ -1,53 +1,53 @@
+.carousel-image-container {
+  width: 100%; /* Set the width of the container to fill the Carousel.Item */
+  height: 100%; /* Set the height of the container to fill the Carousel.Item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow beyond the container */
+}
+/* Additional styles to make the image cover the container */
+.carousel-image-container img {
+  object-fit: cover; /* Apply the 'cover' property to the image */
+  width: 100%; /* Ensure the image covers the entire container */
+  height: 300px; /* Ensure the image covers the entire container */
+  object-position: 50% 30%;
+}
+
 .image-outer-container {
-  height: 300px; /* Adjust the height as needed */
-  overflow: hidden;
   position: relative;
 }
 
-.image-inner-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* object-position: 0% 30%; */
-}
-
-.image-outer-container button {
+#But {
   position: absolute;
-  right: 0;
   bottom: 0;
-  background-color: red;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.813);
   border: none;
   padding: 5px;
   border-radius: 5px;
-  width: 180px;
   white-space: normal;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
-}
-
-#Contact {
- width: 50px;
-}
-
-#But {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Titillium Web";
-  font-size: 20px;
-  font-weight: 700;
+  gap: 10px;
+  font-family: 'Titillium Web';
+}
+
+#Contact {
+  width: 50px;
 }
 
 #But p {
   margin-bottom: -1px;
+}
 
+.Emergency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

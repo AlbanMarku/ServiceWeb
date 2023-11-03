@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import '../styles/serviceBox.css';
 import serviceImg from '../assets/service.jpg';
-import AD from '../assets/ad1.jpg';
+// import AD from '../assets/ad1.jpg';
 
 export default function ServiceBox() {
   return (
@@ -36,11 +36,11 @@ export default function ServiceBox() {
           </Card.Body>
         </Card>
       </CardGroup>
-      {/* grabbing css from another comp. Change this to its own comp with own style. */}
-      <div className="image-outer-container" style={{ padding: 10, paddingBottom: 0, backgroundColor: '#06112f' }}>
-        <div className="image-inner-container">
-          <img src={AD} alt="Logo" className="cover-image" />
-        </div>
+
+      <div className="ReadMoreArea d-grid ">
+        <Button variant="primary" size="lg">
+          More Services
+        </Button>
       </div>
     </div>
   );

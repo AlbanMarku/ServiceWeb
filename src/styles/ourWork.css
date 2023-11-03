@@ -1,22 +1,52 @@
 .custom-carousel {
-
 }
-  
+
 .custom-carousel-image {
-width: 100%; /* Set the width to 100% to make all images the same width */
-height: 600px; /* Maintain the aspect ratio */
-object-fit: cover;
+  width: 100%; /* Set the width to 100% to make all images the same width */
+  height: 600px; /* Maintain the aspect ratio */
+  object-fit: cover;
 }
 
 .OurWork h1 {
-    font-family: "Titillium Web";
-    text-align: center;
-    padding: 20px;
-    background-color: #06112f;
-    margin-bottom: 0;
-    color: #68f3ff;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 40px;
+  font-family: 'Titillium Web';
+  text-align: center;
+  padding: 20px;
+  background-color: #06112f;
+  margin-bottom: 0;
+  color: #68f3ff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+}
 
+.custom-carousel-image-container {
+  position: relative;
+}
+
+.custom-carousel-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay p {
+  text-align: center;
+  margin-bottom: 0;
+  color: #68f3ff;
+  font-family: 'Titillium Web';
+  font-weight: bold;
+  font-size: 30px;
 }

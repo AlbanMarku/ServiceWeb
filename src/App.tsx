@@ -6,6 +6,7 @@ import WelcomeBanner from './components/WelcomeBanner';
 import ServiceBox from './components/ServiceBox';
 import OurWork from './components/OurWork';
 import ContactUs from './components/ContactUs';
+import Socials from './components/Socials';
 
 // TODO component up the cards
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <NavComp />
       <WelcomeBanner />
+      <Socials />
       <ServiceBox />
       <OurWork />
       <ContactUs />

@@ -11,12 +11,15 @@
   padding: 10px;
 }
 
-h1 {
+.ServiceBox h1 {
   text-align: center;
   padding: 20px;
   background-color: #06112f;
   margin-bottom: 0;
   color: #68f3ff;
+  font-style: italic;
+  font-family: "Sometype Mono";
+  font-weight: bold;
 }
 
 .bookButton {

@@ -1,0 +1,39 @@
+.Socials {
+    padding: 20px;
+    background-color: #0e2b7b;
+}
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    background-color: #0e2b7b;
+    justify-content: space-evenly;
+    color: #68f3ff;
+    padding-bottom: 20px;
+}
+
+.Icon {
+}
+
+.Whatsapp {
+    background-color: #0e2b7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhatsappContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+    background-color: rgb(0, 209, 0);
+    border-radius: 5px;
+    margin: 10px 0px;
+    color: white;
+}
+
+.WhatsappContainer p {
+    margin-bottom: -2px;
+}

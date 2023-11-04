@@ -5,12 +5,30 @@ import '../styles/contactUs.css';
 import { FaPhone, FaRegEnvelope, FaLocationDot } from 'react-icons/fa6';
 import Stack from 'react-bootstrap/Stack';
 import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
+import React, { useState, useEffect } from 'react';
 
 export default function ContactUs() {
-  const containerStyle = {
-    width: '100%',
-    height: '400px',
-  };
+  const [iconSize, setIconSize] = useState({});
+
+  useEffect(() => {
+    function updateIconSize() {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth > 768) {
+        setIconSize({ width: '1000px', height: '400px' });
+      } else {
+        setIconSize({ width: '100%', height: '400px' });
+      }
+    }
+
+    updateIconSize();
+
+    window.addEventListener('resize', updateIconSize);
+
+    return () => {
+      window.removeEventListener('resize', updateIconSize);
+    };
+  }, []);
 
   const center = {
     lat: 51.499855666297876,
@@ -41,7 +59,7 @@ export default function ContactUs() {
         </Stack>
       </div>
       <LoadScript googleMapsApiKey="AIzaSyAygloPwikyFUCSEQr3MBCasYMiOYzLr54">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
+        <GoogleMap mapContainerStyle={iconSize} center={center} zoom={12}>
           <MarkerF position={center} />
         </GoogleMap>
       </LoadScript>

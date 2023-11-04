@@ -1,13 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavComp from './components/NavComp';
-import WelcomeBanner from './components/WelcomeBanner';
-import ServiceBox from './components/ServiceBox';
-import OurWork from './components/OurWork';
+import Home from './views/Home';
+import Services from './views/Services';
 import ContactUs from './components/ContactUs';
-import Socials from './components/Socials';
 
 // TODO component up the cards and other elements.
 
@@ -35,10 +33,10 @@ function App() {
     <div className="App">
       <Router>
         <NavComp />
-        <WelcomeBanner />
-        <Socials />
-        <ServiceBox />
-        <OurWork />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
         <ContactUs />
       </Router>
     </div>

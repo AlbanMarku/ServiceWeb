@@ -28,7 +28,7 @@ export default function ContactUs() {
             <FaRegEnvelope />
             <p>albanmarku@duck.com</p>
           </div>
-          <div className="ContactItem">
+          <div className="ContactItem" style={{ paddingBottom: 20 }}>
             <FaLocationDot />
             <p>56 Essex Court Station Road</p>
           </div>

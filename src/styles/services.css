@@ -10,11 +10,95 @@
   .BannerContainer #Banner{
     object-fit: cover; /* Apply the 'cover' property to the image */
     width: 100%; /* Ensure the image covers the entire container */
-    height: 400px; /* Ensure the image covers the entire container */
+    height: 300px; /* Ensure the image covers the entire container */
     object-position: 10%;
   }
   
   .Services{
     position: relative;
+    background-color: #06112f;
   }
+
+.Services h1 {
+    font-family: 'Titillium Web';
+    text-align: center;
+    padding: 20px;
+    background-color: #06112f;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #68f3ff;
+    background-color: #29008a;
+}
+
+.accordion-button.collapsed {
+    background-color: #0e2b7b;
+    color: #68f3ff;
+}
+
+
+
+.accordion-item {
+    border: 0;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.ServiceDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(208, 208, 208);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ServiceDesc p {
+    margin: 0;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.ServiceArea .CardGroup {
+    background-color: #06112f;
+}
+
+.ServiceArea .CardButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.ServiceArea .Card {
+    background-color: #06112f;
+    color: rgb(208, 208, 208);
+    border-radius: 0;
+    padding: 0;
+}
+.PriceArea p {
+    color: #68f3ff;
+}
+
+.PriceArea h2 {
+    color: white;
+}
+
+.ServiceArea .card-title {
+    color: white;
+    font-size: 30px;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
   

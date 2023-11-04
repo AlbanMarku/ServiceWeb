@@ -31,6 +31,7 @@
 @media (min-width: 768px) {
     .Parallax {
         height: 700px;
+        background-position: 0% 0%;
     }
     
     .ParallaxContent {

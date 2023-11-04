@@ -1,5 +1,5 @@
 .Footer {
-    background-color: #06112f;
+    background-color: #111520;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -51,4 +51,31 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .Footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    .UsefulLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+    .UsefulLinks a {
+        color: #68f3ff;
+        text-align: center;
+    }
+
 }

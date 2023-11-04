@@ -22,7 +22,7 @@ export default function Services() {
         </p>
       </div>
       <div className="ServiceArea">
-        <Accordion alwaysOpen flush>
+        <Accordion className="AccordionArea" alwaysOpen flush>
           <Accordion.Item id="item0" eventKey="0">
             <Accordion.Header>Faults</Accordion.Header>
             <Accordion.Body>

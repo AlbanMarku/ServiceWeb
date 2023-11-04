@@ -58,11 +58,13 @@ export default function ContactUs() {
           </div>
         </Stack>
       </div>
-      <LoadScript googleMapsApiKey="AIzaSyAygloPwikyFUCSEQr3MBCasYMiOYzLr54">
-        <GoogleMap mapContainerStyle={iconSize} center={center} zoom={12}>
-          <MarkerF position={center} />
-        </GoogleMap>
-      </LoadScript>
+      <div className="MapArea">
+        <LoadScript googleMapsApiKey="AIzaSyAygloPwikyFUCSEQr3MBCasYMiOYzLr54">
+          <GoogleMap mapContainerStyle={iconSize} center={center} zoom={12}>
+            <MarkerF position={center} />
+          </GoogleMap>
+        </LoadScript>
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import NavComp from './components/NavComp';
 import Home from './views/Home';
 import Services from './views/Services';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 // TODO component up the cards and other elements.
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/services" element={<Services />} />
         </Routes>
         <ContactUs />
+        <Footer />
       </Router>
     </div>
   );

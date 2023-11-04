@@ -1,0 +1,55 @@
+.Footer {
+    background-color: #06112f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.PayIcons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+.PayIcon {
+    width: 90px;
+}
+
+#MainLogo {
+    width: 170px;
+    border: solid 1px #68f3ff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 50px;
+
+}
+
+.UsefulLinks {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.UsefulLinks h2 {
+    color: #68f3ff;
+    font-family: 'Titillium Web';
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.UsefulLinks a {
+    color: #68f3ff;
+}
+
+.UsefulLinks .Links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

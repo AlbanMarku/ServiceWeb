@@ -7,6 +7,7 @@ import Home from './views/Home';
 import Services from './views/Services';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // TODO component up the cards and other elements.
 
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <NavComp />
         <Routes>
           <Route path="/" element={<Home />} />

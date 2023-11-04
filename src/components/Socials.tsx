@@ -7,15 +7,17 @@ export default function Socials() {
   return (
     <div className="Socials">
       <div className="Icons">
-        <FaWhatsapp size={37} className="Icon" />
+        <a href="https://wa.me/1234567890?text=Hello%20there!">
+          <FaWhatsapp size={37} className="Icon" />
+        </a>
         <FaInstagram size={37} className="Icon" />
         <FaTiktok size={37} className="Icon" />
       </div>
       <div className="Whatsapp">
-        <div className="WhatsappContainer">
-          <FaWhatsapp size={25} />
+        <a className="WhatsappContainer" href="https://wa.me/1234567890?text=Hello%20there!">
+          <FaWhatsapp color="white" size={25} />
           <p>Text 07306066306</p>
-        </div>
+        </a>
       </div>
     </div>
   );

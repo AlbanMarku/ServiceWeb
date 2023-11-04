@@ -3,10 +3,16 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import '../styles/serviceBox.css';
+import { useNavigate } from 'react-router-dom';
 import serviceImg from '../assets/service.jpg';
 // import AD from '../assets/ad1.jpg';
 
 export default function ServiceBox() {
+  const navigate = useNavigate();
+  const routeChange = () => {
+    const path = `/services`;
+    navigate(path);
+  };
   return (
     <div className="ServiceBox">
       <h1>SERVICES</h1>
@@ -38,7 +44,7 @@ export default function ServiceBox() {
       </CardGroup>
 
       <div className="ReadMoreArea d-grid ">
-        <Button variant="primary" size="lg">
+        <Button onClick={routeChange} variant="primary" size="lg">
           More Services
         </Button>
       </div>

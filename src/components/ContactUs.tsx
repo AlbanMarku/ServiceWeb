@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable import/no-extraneous-dependencies */
 import '../styles/contactUs.css';
 import { FaPhone, FaRegEnvelope, FaLocationDot } from 'react-icons/fa6';
@@ -22,15 +24,19 @@ export default function ContactUs() {
         <Stack gap={3}>
           <div className="ContactItem">
             <FaPhone />
-            <p>07306066306</p>
+            <a href="tel:07306066306">07306066306</a>
           </div>
           <div className="ContactItem">
             <FaRegEnvelope />
-            <p>albanmarku@duck.com</p>
+            <a href="mailto:albanmarku@outlook.com?subject=General Contact&body=I have a general question...">
+              albanmarku@outlook.com
+            </a>
           </div>
           <div className="ContactItem" style={{ paddingBottom: 20 }}>
             <FaLocationDot />
-            <p>56 Essex Court Station Road</p>
+            <a href="https://www.google.co.uk/maps/place/121+Mortlake+High+St,+London+SW14+8SN/@51.4691005,-0.2560081,17z/data=!4m6!3m5!1s0x48760ef52affb837:0xce97483083dc400d!8m2!3d51.4702032!4d-0.258179!16s%2Fg%2F11bw3h1fgk?entry=ttu">
+              56 essex court station road
+            </a>
           </div>
         </Stack>
       </div>

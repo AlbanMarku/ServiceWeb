@@ -35,3 +35,8 @@
   margin: 20px 20px 0px 20px;
   background-color: #0e2b7b;
 }
+
+.ReadMoreArea button a {
+  text-decoration: none;
+  color: white;
+}

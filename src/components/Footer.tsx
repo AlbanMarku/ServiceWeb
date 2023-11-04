@@ -1,5 +1,7 @@
 import visa from '../assets/Visa.png';
 import mainLogo from '../assets/MainLogo.jpg';
+import masterCard from '../assets/MasterCard.png';
+import express from '../assets/express.png';
 import '../styles/footer.css';
 
 export default function Footer() {
@@ -10,8 +12,8 @@ export default function Footer() {
       </div>
       <div className="PayIcons">
         <img className="PayIcon" src={visa} alt="Visa" />
-        <img className="PayIcon" src={visa} alt="Visa" />
-        <img className="PayIcon" src={visa} alt="Visa" />
+        <img className="PayIcon" src={masterCard} alt="Visa" />
+        <img className="PayIcon" src={express} alt="Visa" />
       </div>
       <div className="UsefulLinks">
         <h2>USEFUL LINKS</h2>

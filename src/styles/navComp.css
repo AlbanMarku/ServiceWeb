@@ -3,9 +3,10 @@
   font-family: 'Titillium Web';
 }
 
-.brand,
-.link {
+.NavComp .SubLink {
   color: #68f3ff;
+  text-decoration: none;
+  margin: 5px 0px;
 }
 
 .navbar-toggler-icon {
@@ -14,4 +15,9 @@
 
 .navbar-toggler {
   border: 1px solid #68f3ff;
+}
+
+.Brand {
+  text-decoration: none;
+  color: #68f3ff;
 }

@@ -10,7 +10,9 @@ export default function NavComp() {
     <Navbar expand="md" className="NavComp">
       <Container>
         <Navbar.Brand className="brand">
-          <Link to="/">Always On Electrician</Link>
+          <Link className="Brand" to="/">
+            Always On Electrician
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle className="burger" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>

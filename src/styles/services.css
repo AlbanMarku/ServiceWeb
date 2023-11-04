@@ -1,0 +1,20 @@
+.BannerContainer {
+    width: 100%; /* Set the width of the container to fill the Carousel.Item */
+    height: 100%; /* Set the height of the container to fill the Carousel.Item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow beyond the container */
+  }
+  /* Additional styles to make the image cover the container */
+  .BannerContainer #Banner{
+    object-fit: cover; /* Apply the 'cover' property to the image */
+    width: 100%; /* Ensure the image covers the entire container */
+    height: 400px; /* Ensure the image covers the entire container */
+    object-position: 10%;
+  }
+  
+  .Services{
+    position: relative;
+  }
+  

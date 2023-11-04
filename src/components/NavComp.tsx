@@ -16,7 +16,7 @@ export default function NavComp() {
         </Navbar.Brand>
         <Navbar.Toggle className="burger" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
-          <Nav className="ms-auto">
+          <Nav className="ms-auto ff">
             <Link className="SubLink" to="/">
               Home
             </Link>

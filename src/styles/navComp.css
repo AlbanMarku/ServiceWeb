@@ -21,3 +21,10 @@
   text-decoration: none;
   color: #68f3ff;
 }
+
+@media (min-width: 768px) {
+  .ff {
+    display: flex;
+    gap: 20px;
+  }
+}

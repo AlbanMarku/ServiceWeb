@@ -1,3 +1,5 @@
+
+
 .CardArea {
   background-color: #06112f;
 }
@@ -6,8 +8,7 @@
   background-color: #06112f;
   border: 2px solid #0e2b7b;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 10px 10px 10px;
   padding: 10px;
 }
 
@@ -23,20 +24,56 @@
   font-size: 40px;
 }
 
+.CardSection {
+
+}
+
 .CardArea .bookButton {
   background-color: #0e2b7b;
 }
 
 .ReadMoreArea {
   background-color: #06112f;
+  width: 100%;
+
 }
 
 .ReadMoreArea button {
-  margin: 20px 20px 0px 20px;
+  margin: 20px 0 0 0;
   background-color: #0e2b7b;
+  width: 100%;
 }
 
 .ReadMoreArea button a {
   text-decoration: none;
   color: white;
+}
+
+
+@media (min-width: 768px) {
+  .CardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #06112f;
+  }
+
+
+  .CardArea {
+    display: flex;
+    gap: 20px;
+  }
+
+  .CardArea .Card {
+    max-width: 300px;
+    background-color: #111520;
+    border: none;
+    margin: 0;
+  }
+
+  .ReadMoreArea {
+    width: 400px;
+  }
+  
 }

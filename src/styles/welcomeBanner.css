@@ -51,3 +51,61 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@media (min-width: 768px) {
+  .carousel-image-container {
+    width: 100%; /* Set the width of the container to fill the Carousel.Item */
+    height: 100%; /* Set the height of the container to fill the Carousel.Item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow beyond the container */
+  }
+  /* Additional styles to make the image cover the container */
+  .carousel-image-container img {
+    object-fit: cover; /* Apply the 'cover' property to the image */
+    width: 100%; /* Ensure the image covers the entire container */
+    height: 500px; /* Ensure the image covers the entire container */
+    object-position: 50% 30%;
+  }
+  
+  .image-outer-container {
+    position: relative;
+  }
+  
+  #But {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.813);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Titillium Web';
+  }
+  
+  #Contact {
+    width: 50px;
+  }
+  
+  #But p {
+    margin-bottom: -1px;
+  }
+  
+  .Emergency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}

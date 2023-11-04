@@ -28,3 +28,44 @@
   font-weight: bold;
   font-size: 40px;
 }
+
+@media (min-width: 768px) {
+
+  .ContactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .ContactArea {
+    width: 800px;
+
+  }
+  .ContactItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 40px;
+  }
+  
+  .ContactItem a {
+    margin-top: 10px;
+    color: #68f3ff;
+    text-decoration: underline;
+  }
+  
+  .ContactUs h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #06112f;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-style: italic;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    font-size: 40px;
+  }
+}

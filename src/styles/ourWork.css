@@ -50,3 +50,49 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+@media (min-width: 768px) {
+
+.CarousalContainer {
+  background-color: #06112f;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-carousel {
+  width: 800px;
+
+}
+  .custom-carousel-image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-carousel-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-overlay p {
+    text-align: center;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    font-size: 30px;
+  }
+}

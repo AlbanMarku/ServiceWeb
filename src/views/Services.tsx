@@ -11,19 +11,24 @@ import Socials from '../components/Socials';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import BookForm from '../components/BookForm';
+import { useNavigate } from 'react-router-dom';
 
 export default function Services() {
   const [show, setShow] = useState(false);
+  const history = useNavigate();
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     // Trigger the form submission by finding the form element and submitting it
+    e.preventDefault();
     const form = document.getElementById('contact-form') as HTMLFormElement;
     if (form) {
       form.submit();
     }
+
+    history('/');
   };
 
   return (
@@ -39,7 +44,7 @@ export default function Services() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleFormSubmit}>
+          <Button variant="primary" onClick={(e: React.FormEvent) => handleFormSubmit(e)}>
             Send Inquiry
           </Button>
         </Modal.Footer>

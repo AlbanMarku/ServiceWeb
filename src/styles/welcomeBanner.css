@@ -37,6 +37,11 @@
   font-family: 'Titillium Web';
 }
 
+#But a {
+  color: black;
+  text-decoration: none;
+}
+
 #Contact {
   width: 50px;
 }
@@ -75,22 +80,7 @@
   }
   
   #But {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 0, 0, 0.813);
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-    white-space: normal;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Titillium Web';
+    display: none;
   }
   
   #Contact {

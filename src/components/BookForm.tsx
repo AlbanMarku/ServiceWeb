@@ -4,7 +4,7 @@
 export default function BookForm() {
   return (
     <div className="BookForm">
-      <form name="contact" method="post">
+      <form id="contact-form" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label htmlFor="name">Name</label>

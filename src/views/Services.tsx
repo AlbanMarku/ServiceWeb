@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import serviceImg from '../assets/service.jpg';
 import { CardGroup } from 'react-bootstrap';
+import Socials from '../components/Socials';
 
 export default function Services() {
   return (
@@ -14,6 +15,8 @@ export default function Services() {
       <div className="BannerContainer">
         <img id="Banner" src={serviceBanner} alt="services" />
       </div>
+      <Socials />
+
       <div className="ServiceDesc">
         <h1>WHAT WE DO</h1>
         <p>

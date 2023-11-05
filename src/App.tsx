@@ -8,6 +8,7 @@ import Services from './views/Services';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import BookForm from './components/BookForm';
 
 // TODO component up the cards and other elements.
 
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <BookForm />
         <ScrollToTop />
         <NavComp />
         <Routes>

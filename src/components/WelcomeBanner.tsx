@@ -28,8 +28,10 @@ export default function WelcomeBanner() {
       <button id="But" type="button">
         <img id="Contact" src={emergency} alt="emergency contact" />
         <div className="Emergency">
-          <p>EMERGENCY</p>
-          <p>CONTACT</p>
+          <a href="tel:07306066306">
+            <p>EMERGENCY</p>
+            <p>CONTACT</p>
+          </a>
         </div>
       </button>
     </div>

@@ -23,8 +23,17 @@
 }
 
 @media (min-width: 768px) {
-  .ff {
+  .Navi {
     display: flex;
     gap: 20px;
+    font-size: 20px;
+  }
+
+  .Brand {
+    font-size: 30px;
+  }
+
+  .NavComp .SubLink {
+    margin: 0;
   }
 }

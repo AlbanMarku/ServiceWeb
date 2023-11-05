@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import { FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa6';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/socials.css';
 
 export default function Socials() {
@@ -30,14 +30,14 @@ export default function Socials() {
   return (
     <div className="Socials">
       <div className="Icons">
-        <a href="https://wa.me/1234567890?text=Hello%20there!">
+        <a href="https://wa.me/07306066306?text=Hello%20there!">
           <FaWhatsapp size={iconSize} className="Icon" />
         </a>
         <FaInstagram size={iconSize} className="Icon" />
         <FaTiktok size={iconSize} className="Icon" />
       </div>
       <div className="Whatsapp">
-        <a className="WhatsappContainer" href="https://wa.me/1234567890?text=Hello%20there!">
+        <a className="WhatsappContainer" href="https://wa.me/07306066306?text=Hello%20there!">
           <FaWhatsapp color="white" size={25} />
           <p>Text 07306066306</p>
         </a>

@@ -8,6 +8,7 @@ import Services from './views/Services';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Form from './views/Form';
 
 // TODO component up the cards and other elements.
 
@@ -39,6 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/form/:service" element={<Form />} />
         </Routes>
         <ContactUs />
         <Footer />

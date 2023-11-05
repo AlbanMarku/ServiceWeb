@@ -8,52 +8,15 @@ import Button from 'react-bootstrap/Button';
 import serviceImg from '../assets/service.jpg';
 import { CardGroup } from 'react-bootstrap';
 import Socials from '../components/Socials';
-import Modal from 'react-bootstrap/Modal';
-import { useState } from 'react';
-import BookForm from '../components/BookForm';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
-  const [show, setShow] = useState(false);
-  const history = useNavigate();
-
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    // Trigger the form submission by finding the form element and submitting it
-    e.preventDefault();
-    const form = document.getElementById('contact-form') as HTMLFormElement;
-    if (form) {
-      form.submit();
-    }
-
-    history('/');
-  };
-
   return (
     <div className="Services">
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Get a quotation</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <BookForm />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={(e: React.FormEvent) => handleFormSubmit(e)}>
-            Send Inquiry
-          </Button>
-        </Modal.Footer>
-      </Modal>
       <div className="BannerContainer">
         <img id="Banner" src={serviceBanner} alt="services" />
       </div>
       <Socials />
-
       <div className="ServiceDesc">
         <h1>WHAT WE DO</h1>
         <p>
@@ -81,12 +44,11 @@ export default function Services() {
                       eum tempore aperiam.
                     </Card.Text>
                     <div className="CardButtons">
-                      <Button variant="primary" className="bookButton" onClick={handleShow}>
-                        Book now
-                      </Button>
-                      <Button variant="primary" className="bookButton">
-                        Get quote
-                      </Button>
+                      <Link className="Brand" to="/form/faulty">
+                        <Button variant="primary" className="BookButton">
+                          Book Now
+                        </Button>
+                      </Link>
                     </div>
                   </Card.Body>
                 </Card>
@@ -104,12 +66,11 @@ export default function Services() {
                       eum tempore aperiam.
                     </Card.Text>
                     <div className="CardButtons">
-                      <Button variant="primary" className="bookButton">
-                        Book now
-                      </Button>
-                      <Button variant="primary" className="bookButton">
-                        Get quote
-                      </Button>
+                      <Link className="Brand" to="/form/faulty">
+                        <Button variant="primary" className="BookButton">
+                          Book Now
+                        </Button>
+                      </Link>
                     </div>
                   </Card.Body>
                 </Card>

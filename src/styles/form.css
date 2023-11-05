@@ -1,0 +1,18 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #06112f;
+    width: 100%;
+}
+
+.Form h1 {
+    font-family: 'Titillium Web';
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}

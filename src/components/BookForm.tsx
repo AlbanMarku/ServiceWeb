@@ -3,13 +3,9 @@
 import Button from 'react-bootstrap/Button';
 
 export default function BookForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
-
   return (
     <div className="BookForm">
-      <form name="contact v1" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+      <form name="contact v1" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <label>
           Your Name:
@@ -23,7 +19,7 @@ export default function BookForm() {
           Message:
           <textarea name="message" />
         </label>
-        <Button type="submit">submit</Button>
+        <Button type="submit">Submit</Button>
       </form>
     </div>
   );

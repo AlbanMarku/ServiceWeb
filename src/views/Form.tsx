@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import BookForm from '../components/BookForm';
-import Socials from '../components/Socials';
 import serviceBanner from '../assets/serviceBanner.jpg';
 import '../styles/form.css';
 
@@ -14,7 +13,6 @@ export default function Form() {
       <div className="BannerContainer">
         <img id="Banner" src={serviceBanner} alt="services" />
       </div>
-      <Socials />
       <div className="FormArea">
         <h1>{serviceName.toUpperCase()} SERVICE</h1>
         <BookForm service={serviceName} />

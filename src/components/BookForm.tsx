@@ -3,9 +3,13 @@
 import Button from 'react-bootstrap/Button';
 
 export default function BookForm() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="BookForm">
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact v1" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <label>
           Your Name:

@@ -1,25 +1,26 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/no-unescaped-entities */
-import Button from 'react-bootstrap/Button';
 
 export default function BookForm() {
   return (
     <div className="BookForm">
-      <form name="contact v1" method="POST" data-netlify="true">
+      <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
-        <label>
-          Your Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Your Email:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Message:
-          <textarea name="message" />
-        </label>
-        <Button type="submit">Submit</Button>
+        <p>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </p>
+        <p>
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" required />
+        </p>
+        <p>
+          <input type="submit" value="Submit message" />
+        </p>
       </form>
     </div>
   );

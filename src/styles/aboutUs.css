@@ -28,6 +28,13 @@
     font-size: 40px;
 }
 
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    .Parallax {
+        background-position: scroll;
+    }
+  }
+
 @media (min-width: 768px) {
     .Parallax {
         height: 700px;

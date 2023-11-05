@@ -18,9 +18,6 @@ export default function BookForm() {
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" required />
         </p>
-        <p>
-          <input type="submit" value="Submit message" />
-        </p>
       </form>
     </div>
   );

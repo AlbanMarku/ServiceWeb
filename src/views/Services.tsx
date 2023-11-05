@@ -8,10 +8,42 @@ import Button from 'react-bootstrap/Button';
 import serviceImg from '../assets/service.jpg';
 import { CardGroup } from 'react-bootstrap';
 import Socials from '../components/Socials';
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
+import BookForm from '../components/BookForm';
 
 export default function Services() {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  const handleFormSubmit = () => {
+    // Trigger the form submission by finding the form element and submitting it
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    if (form) {
+      form.submit();
+    }
+  };
+
   return (
     <div className="Services">
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Get a quotation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <BookForm />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleFormSubmit}>
+            Send Inquiry
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <div className="BannerContainer">
         <img id="Banner" src={serviceBanner} alt="services" />
       </div>
@@ -44,7 +76,7 @@ export default function Services() {
                       eum tempore aperiam.
                     </Card.Text>
                     <div className="CardButtons">
-                      <Button variant="primary" className="bookButton">
+                      <Button variant="primary" className="bookButton" onClick={handleShow}>
                         Book now
                       </Button>
                       <Button variant="primary" className="bookButton">

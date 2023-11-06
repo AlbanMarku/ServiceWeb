@@ -9,7 +9,9 @@ export default function CanvasComp() {
   const handleToggle = () => setShow(!show);
 
   useEffect(() => {
-    setShow(true);
+    setTimeout(() => {
+      setShow(true);
+    }, 2000);
   }, []);
   return (
     <div className="CanvasComp">

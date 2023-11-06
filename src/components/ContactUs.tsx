@@ -36,7 +36,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="ContactUs">
+    <div id="ContactUs" className="ContactUs">
       <h1>CONTACT US</h1>
       <div className="ContactArea">
         <Stack gap={3}>

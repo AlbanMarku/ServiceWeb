@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/order */
@@ -19,10 +20,10 @@ export default function Services() {
       <Socials />
       <div className="ServiceDesc">
         <h1>WHAT WE DO</h1>
-        <p>
-          We do many things here like stuff like this and that fixing things and what not so look below for more
-          information
-        </p>
+        <div>
+          <p>We offer a wide range of services. Look below for our most common jobs people hire us for.</p>
+          <p>Don't see something you need or have any questions? Contact us!</p>
+        </div>
       </div>
       <div className="ServiceArea">
         <Accordion className="AccordionArea" alwaysOpen flush>

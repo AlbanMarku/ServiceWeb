@@ -53,7 +53,7 @@ export default function ContactUs() {
           <div className="ContactItem" style={{ paddingBottom: 20 }}>
             <FaLocationDot />
             <a href="https://www.google.co.uk/maps/place/140+Links+Rd,+London+SW17+9EJ/@51.4192773,-0.1582329,17z/data=!3m1!4b1!4m5!3m4!1s0x4876066e36933d1b:0x4cf45da5bf1270d9!8m2!3d51.419274!4d-0.155658?entry=ttu">
-              140 Links Road Tooting London SW17 9ES
+              140 Links Road Tooting London <br /> SW17 9ES
             </a>
           </div>
         </Stack>

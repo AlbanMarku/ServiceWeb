@@ -9,27 +9,28 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Form from './views/Form';
-import CanvasComp from './components/CanvasComp';
+import { MyContextProvider } from './context';
 
 // TODO component up the cards and other elements.
 
 function App() {
   return (
     <div className="App" style={{ backgroundColor: '#06112f' }}>
-      <Router>
-        <ScrollToTop />
-        <CanvasComp />
-        <NavComp />
-        <div style={{ maxWidth: '1700px', margin: '0 auto' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/form/:service" element={<Form />} />
-          </Routes>
-          <ContactUs />
-        </div>
-        <Footer />
-      </Router>
+      <MyContextProvider>
+        <Router>
+          <ScrollToTop />
+          <NavComp />
+          <div style={{ maxWidth: '1700px', margin: '0 auto' }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/form/:service" element={<Form />} />
+            </Routes>
+            <ContactUs />
+          </div>
+          <Footer />
+        </Router>
+      </MyContextProvider>
     </div>
   );
 }

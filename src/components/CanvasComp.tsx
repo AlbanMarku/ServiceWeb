@@ -1,18 +1,24 @@
 import { useState, useEffect } from 'react';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import '../styles/canvasComp.css';
 import { Button } from 'react-bootstrap';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useMyContext } from '../context';
+import '../styles/canvasComp.css';
 import plumbing from '../assets/plumbing.png';
 
 export default function CanvasComp() {
   const [show, setShow] = useState(false);
+  const { renderedComp, setRenderedComp } = useMyContext();
   const handleToggle = () => setShow(!show);
 
   useEffect(() => {
     setTimeout(() => {
-      setShow(true);
-    }, 2000);
-  }, []);
+      if (!renderedComp) {
+        setShow(true);
+        setRenderedComp(true);
+      }
+    }, 4000);
+  }, [renderedComp, setRenderedComp]);
+
   return (
     <div className="CanvasComp">
       <Offcanvas show={show} onHide={handleToggle}>

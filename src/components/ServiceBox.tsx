@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import '../styles/serviceBox.css';
 import { useNavigate } from 'react-router-dom';
 import serviceImg from '../assets/service.jpg';
+import CardComp from './CardComp';
 // import AD from '../assets/ad1.jpg';
 
 export default function ServiceBox() {
@@ -18,42 +18,9 @@ export default function ServiceBox() {
       <h1>SERVICES</h1>
       <div className="CardSection">
         <CardGroup className="CardArea">
-          <Card className="Card">
-            <Card.Img variant="top" src={serviceImg} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
-              <Button variant="primary" className="bookButton">
-                Book now
-              </Button>
-            </Card.Body>
-          </Card>
-          <Card className="Card">
-            <Card.Img variant="top" src={serviceImg} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
-              <Button variant="primary" className="bookButton">
-                Book now
-              </Button>
-            </Card.Body>
-          </Card>
-          <Card className="Card" style={{ marginBottom: 0 }}>
-            <Card.Img variant="top" src={serviceImg} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
-              <Button variant="primary" className="bookButton">
-                Book now
-              </Button>
-            </Card.Body>
-          </Card>
+          <CardComp img={serviceImg} title="service" price="£30-£40" desc="here is a service" />
+          <CardComp img={serviceImg} title="service" price="£30-£40" desc="here is a service" />
+          <CardComp img={serviceImg} title="service" price="£30-£40" desc="here is a service" />
         </CardGroup>
         <div className="ReadMoreArea ">
           <Button onClick={routeChange} variant="primary" size="lg">

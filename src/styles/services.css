@@ -13,7 +13,8 @@
     height: 300px; /* Ensure the image covers the entire container */
     object-position: 10%;
   }
-  
+
+
   .Services{
     position: relative;
     background-color: #06112f;
@@ -78,16 +79,17 @@
     gap: 10px;
 }
 
-.ServiceArea .BookButton {
+.BookButton {
     background-color: #0e2b7b;
 }
 
 .ServiceArea .Card {
     background-color: #06112f;
     color: rgb(208, 208, 208);
-    border-radius: 0;
+    border-radius: 5px;
     padding: 0;
     max-width: 500px;
+    border: 1px solid #0e2b7b;
 }
 .PriceArea p {
     color: #68f3ff;

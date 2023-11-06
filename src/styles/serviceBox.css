@@ -8,8 +8,12 @@
   background-color: #06112f;
   border: 2px solid #0e2b7b;
   color: white;
-  margin: 0px 10px 10px 10px;
   padding: 10px;
+}
+
+.CardArea p {
+  color: rgb(208, 208, 208);
+
 }
 
 .ServiceBox h1 {
@@ -67,7 +71,6 @@
 
   .CardArea .Card {
     max-width: 300px;
-    background-color: #111520;
     border: none;
     margin: 0;
   }

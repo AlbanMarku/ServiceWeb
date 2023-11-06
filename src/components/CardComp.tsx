@@ -20,7 +20,7 @@ export default function CardComp({ img, desc, price, title }: Props) {
         </div>
         <Card.Text>{desc}</Card.Text>
         <div className="CardButtons">
-          <Link className="Brand" to="/form/faulty">
+          <Link className="Brand" to={`/form/${title}`}>
             <Button variant="primary" className="BookButton">
               Book Now
             </Button>

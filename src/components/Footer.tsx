@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import visa from '../assets/Visa.png';
 import mainLogo from '../assets/MainLogo.jpg';
 import masterCard from '../assets/MasterCard.png';
@@ -8,7 +9,9 @@ export default function Footer() {
   return (
     <div className="Footer">
       <div className="CompanyIcon">
-        <img id="MainLogo" src={mainLogo} alt="logo" />
+        <a href="#NavComp">
+          <img id="MainLogo" src={mainLogo} alt="logo" />
+        </a>
       </div>
       <div className="PayIcons">
         <img className="PayIcon" src={visa} alt="Visa" />
@@ -18,9 +21,9 @@ export default function Footer() {
       <div className="UsefulLinks">
         <h2>USEFUL LINKS</h2>
         <div className="Links">
-          <a href="www.google.com">About us</a>
-          <a href="www.google.com">Our prices</a>
-          <a href="www.google.com">Contact us</a>
+          <a href="#AboutUs">About us</a>
+          <Link to="/services">Our Prices</Link>
+          <a href="#Socials ">Contact us</a>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import '../styles/contactUs.css';
 import { FaPhone, FaRegEnvelope, FaLocationDot } from 'react-icons/fa6';
 import Stack from 'react-bootstrap/Stack';
 import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ContactUs() {
   const [iconSize, setIconSize] = useState({});
@@ -31,8 +31,8 @@ export default function ContactUs() {
   }, []);
 
   const center = {
-    lat: 51.499855666297876,
-    lng: -0.22421449956167322,
+    lat: 51.41929741737679,
+    lng: -0.15565799999999996,
   };
 
   return (
@@ -42,18 +42,18 @@ export default function ContactUs() {
         <Stack gap={3}>
           <div className="ContactItem">
             <FaPhone />
-            <a href="tel:07306066306">07306066306</a>
+            <a href="tel:07400589645">07306066306</a>
           </div>
           <div className="ContactItem">
             <FaRegEnvelope />
-            <a href="mailto:albanmarku@outlook.com?subject=General Contact&body=I have a general question...">
+            <a href="mailto:Info@alwaysonelectrician.co.uk?subject=General Contact&body=I have a general question...">
               albanmarku@outlook.com
             </a>
           </div>
           <div className="ContactItem" style={{ paddingBottom: 20 }}>
             <FaLocationDot />
-            <a href="https://www.google.co.uk/maps/place/121+Mortlake+High+St,+London+SW14+8SN/@51.4691005,-0.2560081,17z/data=!4m6!3m5!1s0x48760ef52affb837:0xce97483083dc400d!8m2!3d51.4702032!4d-0.258179!16s%2Fg%2F11bw3h1fgk?entry=ttu">
-              56 essex court station road
+            <a href="https://www.google.co.uk/maps/place/140+Links+Rd,+London+SW17+9EJ/@51.4192773,-0.1582329,17z/data=!3m1!4b1!4m5!3m4!1s0x4876066e36933d1b:0x4cf45da5bf1270d9!8m2!3d51.419274!4d-0.155658?entry=ttu">
+              140 Links Road Tooting London,SW17 9ES
             </a>
           </div>
         </Stack>

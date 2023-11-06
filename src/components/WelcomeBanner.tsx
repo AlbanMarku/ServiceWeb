@@ -28,7 +28,7 @@ export default function WelcomeBanner() {
       <button id="But" type="button">
         <img id="Contact" src={emergency} alt="emergency contact" />
         <div className="Emergency">
-          <a href="tel:07306066306">
+          <a href="tel:07400589645">
             <p>EMERGENCY</p>
             <p>CONTACT</p>
           </a>

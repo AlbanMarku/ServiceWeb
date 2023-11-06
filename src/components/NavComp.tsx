@@ -10,7 +10,7 @@ export default function NavComp() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar expanded={expanded} expand="md" className="NavComp">
+    <Navbar expanded={expanded} expand="md" className="NavComp" id="NavComp">
       <Container>
         <Navbar.Brand className="brand">
           <Link className="Brand" to="/">

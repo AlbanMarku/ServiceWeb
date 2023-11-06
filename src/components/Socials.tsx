@@ -28,18 +28,26 @@ export default function Socials() {
   }, []);
 
   return (
-    <div className="Socials">
+    <div className="Socials" id="Socials">
       <div className="Icons">
-        <a href="https://wa.me/07306066306?text=Hello%20there!">
+        <a href="https://wa.me/message/JVQ7EOQN4QRQH1" target="_blank" rel="noreferrer">
           <FaWhatsapp size={iconSize} className="Icon" />
         </a>
-        <FaInstagram size={iconSize} className="Icon" />
-        <FaTiktok size={iconSize} className="Icon" />
+        <a
+          href="https://instagram.com/alwaysonelectrician?igshid=MWx1dDNleHk5Znhk&utm_source=qr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaInstagram size={iconSize} className="Icon" />
+        </a>
+        <a href="https://www.tiktok.com/@alwaysonelectrician?_t=8h7P4pRcTT7&_r=1" target="_blank" rel="noreferrer">
+          <FaTiktok size={iconSize} className="Icon" />
+        </a>
       </div>
       <div className="Whatsapp">
-        <a className="WhatsappContainer" href="https://wa.me/07306066306?text=Hello%20there!">
+        <a className="WhatsappContainer" href="https://wa.me/message/JVQ7EOQN4QRQH1" target="_blank" rel="noreferrer">
           <FaWhatsapp color="white" size={25} />
-          <p>Text 07306066306</p>
+          <p>Text 07400589645</p>
         </a>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function BookForm({ service }: Props) {
 
   return (
     <div className="BookForm">
-      <form id="contact-form" name="contact" method="post">
+      <form action="/" id="contact-form" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className="Section">
           <label htmlFor="name">Name</label>

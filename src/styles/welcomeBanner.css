@@ -72,7 +72,7 @@
     object-fit: cover; /* Apply the 'cover' property to the image */
     width: 100%; /* Ensure the image covers the entire container */
     height: 500px; /* Ensure the image covers the entire container */
-    object-position: 50% 30%;
+    object-position: 0% 17%;
   }
   
   .image-outer-container {

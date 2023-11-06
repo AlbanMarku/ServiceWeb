@@ -1,0 +1,38 @@
+.offcanvas {
+    background-color: #0e2b7b;
+}
+
+.offcanvas .btn-close {
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.offcanvas .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.offcanvas button {
+    width: 100%;
+}
+
+.offcanvas img {
+    width: 100%;
+}
+
+.offcanvas h1 {
+    font-family: 'Titillium Web';
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #68f3ff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;}
+
+.offcanvas p {
+    color: white;
+}

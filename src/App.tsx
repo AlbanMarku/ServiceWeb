@@ -9,6 +9,7 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Form from './views/Form';
+import CanvasComp from './components/CanvasComp';
 
 // TODO component up the cards and other elements.
 
@@ -17,6 +18,7 @@ function App() {
     <div className="App" style={{ backgroundColor: '#06112f' }}>
       <Router>
         <ScrollToTop />
+        <CanvasComp />
         <NavComp />
         <div style={{ maxWidth: '1700px', margin: '0 auto' }}>
           <Routes>

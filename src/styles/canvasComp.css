@@ -1,5 +1,6 @@
 .offcanvas {
     background-color: #0e2b7b;
+    height: auto;
 }
 
 .offcanvas .btn-close {
@@ -35,4 +36,5 @@
 
 .offcanvas p {
     color: white;
+    font-size: 18px;
 }

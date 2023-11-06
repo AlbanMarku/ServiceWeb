@@ -6,7 +6,6 @@ import plumbing from '../assets/plumbing.png';
 
 export default function CanvasComp() {
   const [show, setShow] = useState(false);
-
   const handleToggle = () => setShow(!show);
 
   useEffect(() => {
@@ -14,7 +13,7 @@ export default function CanvasComp() {
   }, []);
   return (
     <div className="CanvasComp">
-      <Offcanvas placement="start" show={show} onHide={handleToggle}>
+      <Offcanvas show={show} onHide={handleToggle}>
         <Offcanvas.Header>
           <Offcanvas.Title>
             <h1>PLUMBING SERVICE NOW AVAILABLE!</h1>

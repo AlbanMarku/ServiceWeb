@@ -1,14 +1,14 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/order */
 import serviceBanner from '../assets/serviceBanner.jpg';
 import '../styles/services.css';
 import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import serviceImg from '../assets/service.jpg';
-import { CardGroup } from 'react-bootstrap';
 import Socials from '../components/Socials';
-import { Link } from 'react-router-dom';
+import CardComp from '../components/CardComp';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export default function Services() {
   return (
@@ -29,52 +29,13 @@ export default function Services() {
           <Accordion.Item id="item0" eventKey="0">
             <Accordion.Header>Faults</Accordion.Header>
             <Accordion.Body>
-              <CardGroup className="CardGroup">
-                <Card className="Card">
-                  <Card.Img variant="top" src={serviceImg} />
-                  <Card.Body>
-                    <Card.Title>Fault Fixing</Card.Title>
-                    <div className="PriceArea">
-                      <p>£30-£50</p>
-                    </div>
-                    <Card.Text>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A totam enim facere inventore reiciendis
-                      ad cumque facilis libero tenetur illum? Corrupti eligendi repellendus, iusto earum voluptatibus
-                      asperiores maiores et quae provident. Aliquam voluptatibus reprehenderit nam aspernatur, maxime
-                      eum tempore aperiam.
-                    </Card.Text>
-                    <div className="CardButtons">
-                      <Link className="Brand" to="/form/faulty">
-                        <Button variant="primary" className="BookButton">
-                          Book Now
-                        </Button>
-                      </Link>
-                    </div>
-                  </Card.Body>
-                </Card>
-                <Card className="Card">
-                  <Card.Img variant="top" src={serviceImg} />
-                  <Card.Body>
-                    <Card.Title>Fault Finding</Card.Title>
-                    <div className="PriceArea">
-                      <p>£30-£50</p>
-                    </div>
-                    <Card.Text>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A totam enim facere inventore reiciendis
-                      ad cumque facilis libero tenetur illum? Corrupti eligendi repellendus, iusto earum voluptatibus
-                      asperiores maiores et quae provident. Aliquam voluptatibus reprehenderit nam aspernatur, maxime
-                      eum tempore aperiam.
-                    </Card.Text>
-                    <div className="CardButtons">
-                      <Link className="Brand" to="/form/faulty">
-                        <Button variant="primary" className="BookButton">
-                          Book Now
-                        </Button>
-                      </Link>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </CardGroup>
+              <Row xs={1} md={2} className="g-4 CardGroup">
+                {Array.from({ length: 4 }).map((_, idx) => (
+                  <Col className='d-flex justify-content-center align-items-center"' key={idx}>
+                    <CardComp title="example" price="£30-£40" desc="lorem15" img={serviceImg} />
+                  </Col>
+                ))}
+              </Row>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">

@@ -12,37 +12,20 @@ import Form from './views/Form';
 
 // TODO component up the cards and other elements.
 
-// HOME
-
-// welcome banner with emergency contact.
-// socials.
-// services
-// our work
-// contact us
-// google maps
-// Footer
-
-// SERVICES
-
-// Service title                       //sidebar
-// Service picture
-// Service description
-// Book button//price range
-// Expand info
-// Pop up plumbing
-
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#06112f' }}>
       <Router>
         <ScrollToTop />
         <NavComp />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/form/:service" element={<Form />} />
-        </Routes>
-        <ContactUs />
+        <div style={{ maxWidth: '1700px', margin: '0 auto' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/form/:service" element={<Form />} />
+          </Routes>
+          <ContactUs />
+        </div>
         <Footer />
       </Router>
     </div>

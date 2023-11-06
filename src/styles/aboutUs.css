@@ -46,4 +46,8 @@
         padding: 20px;
         width: 600px;
     }
+
+    .AboutUs p {
+        font-size: 18px;
+    }
 }

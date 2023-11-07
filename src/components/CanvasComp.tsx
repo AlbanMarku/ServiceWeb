@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useMyContext } from '../context';
@@ -33,7 +34,9 @@ export default function CanvasComp() {
             etc.
           </p>
           <img src={plumbing} alt="plumbing service" />
-          <Button className="CardButtons">View More</Button>
+          <Link style={{ width: '100%' }} to="/plumbingService">
+            <Button className="CardButtons">View More</Button>
+          </Link>
           <Button className="CardButtons" onClick={handleToggle}>
             Close
           </Button>

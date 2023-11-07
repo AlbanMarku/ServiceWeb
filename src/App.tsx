@@ -5,6 +5,7 @@ import './App.css';
 import NavComp from './components/NavComp';
 import Home from './views/Home';
 import Services from './views/Services';
+import PlumbingService from './views/PlumbingService';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/plumbingService" element={<PlumbingService />} />
               <Route path="/form/:service" element={<Form />} />
             </Routes>
             <ContactUs />

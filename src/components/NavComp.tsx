@@ -26,6 +26,9 @@ export default function NavComp() {
             <Link onClick={() => setExpanded(false)} className="SubLink" to="/services">
               Services
             </Link>
+            <Link onClick={() => setExpanded(false)} className="SubLink" to="/plumbingService">
+              Plumbing Service
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

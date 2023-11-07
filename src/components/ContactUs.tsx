@@ -14,8 +14,8 @@ export default function ContactUs() {
     function updateIconSize() {
       const screenWidth = window.innerWidth;
 
-      if (screenWidth > 768) {
-        setIconSize({ width: '1000px', height: '400px' });
+      if (screenWidth >= 768) {
+        setIconSize({ width: '760px', height: '400px' });
       } else {
         setIconSize({ width: '100%', height: '400px' });
       }

@@ -42,14 +42,14 @@
     color: #68f3ff;
 }
 
-
-
 .accordion-item {
     border: 0;
 }
 
 .accordion-body {
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .ServiceDesc {
@@ -72,6 +72,7 @@
 }
 .ServiceArea .CardGroup {
     background-color: #06112f;
+    width: 100%;
 }
 
 .ServiceArea .CardButtons {

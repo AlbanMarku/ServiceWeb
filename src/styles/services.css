@@ -1,26 +1,152 @@
 .BannerContainer {
-    width: 100%; /* Set the width of the container to fill the Carousel.Item */
-    height: 100%; /* Set the height of the container to fill the Carousel.Item */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide any overflow beyond the container */
-  }
-  /* Additional styles to make the image cover the container */
-  .BannerContainer #Banner{
-    object-fit: cover; /* Apply the 'cover' property to the image */
-    width: 100%; /* Ensure the image covers the entire container */
-    height: 300px; /* Ensure the image covers the entire container */
-    object-position: 10%;
+  width: 100%; /* Set the width of the container to fill the Carousel.Item */
+  height: 100%; /* Set the height of the container to fill the Carousel.Item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow beyond the container */
+}
+/* Additional styles to make the image cover the container */
+.BannerContainer #Banner {
+  object-fit: cover; /* Apply the 'cover' property to the image */
+  width: 100%; /* Ensure the image covers the entire container */
+  height: 300px; /* Ensure the image covers the entire container */
+  object-position: 10%;
+}
+
+.Services {
+  position: relative;
+  background-color: #06112f;
+}
+
+.Services h1 {
+  font-family: 'Titillium Web';
+  text-align: center;
+  padding: 20px;
+  background-color: #06112f;
+  margin-bottom: 0;
+  color: #68f3ff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #68f3ff;
+  background-color: #29008a;
+}
+
+.accordion-button.collapsed {
+  background-color: #0e2b7b;
+  color: #68f3ff;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-body {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ServiceDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(208, 208, 208);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.ServiceDesc p {
+  font-size: 18px;
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.ServiceArea .CardGroup {
+  background-color: #06112f;
+  width: 100%;
+}
+
+.ServiceArea .CardButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.BookButton {
+  background-color: #0e2b7b;
+}
+
+.ServiceArea .Card {
+  background-color: #06112f;
+  color: rgb(208, 208, 208);
+  border-radius: 5px;
+  padding: 0;
+  max-width: 500px;
+  border: 1px solid #0e2b7b;
+}
+.PriceArea p {
+  color: #68f3ff;
+}
+
+.PriceArea h2 {
+  color: white;
+}
+
+.ServiceArea .card-title {
+  color: white;
+  font-size: 30px;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.ServiceItem {
+  background-color: #06112f;
+  color: rgb(208, 208, 208);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ServiceItem img {
+  width: 100%;
+}
+
+.ServiceItem .BookButton {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .BannerContainer #Banner {
+    height: 500px; /* Ensure the image covers the entire container */
+    object-position: 100% 15%;
   }
 
-
-  .Services{
+  .Services {
     position: relative;
     background-color: #06112f;
   }
 
-.Services h1 {
+  .ServiceArea {
+    display: flex;
+    justify-content: center;
+  }
+
+  .AccordionArea {
+    width: 800px;
+  }
+
+  .Services h1 {
     font-family: 'Titillium Web';
     text-align: center;
     padding: 20px;
@@ -30,130 +156,15 @@
     font-weight: bold;
     font-style: italic;
     font-size: 40px;
-}
+  }
 
-.accordion-button:not(.collapsed) {
+  .accordion-button:not(.collapsed) {
     color: #68f3ff;
     background-color: #29008a;
-}
+  }
 
-.accordion-button.collapsed {
+  .accordion-button.collapsed {
     background-color: #0e2b7b;
     color: #68f3ff;
+  }
 }
-
-.accordion-item {
-    border: 0;
-}
-
-.accordion-body {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.ServiceDesc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(208, 208, 208);
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.ServiceDesc p {
-    font-size: 18px;
-}
-
-.accordion {
-    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='lightskyblue'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-.ServiceArea .CardGroup {
-    background-color: #06112f;
-    width: 100%;
-}
-
-.ServiceArea .CardButtons {
-    display: flex;
-    gap: 10px;
-}
-
-.BookButton {
-    background-color: #0e2b7b;
-}
-
-.ServiceArea .Card {
-    background-color: #06112f;
-    color: rgb(208, 208, 208);
-    border-radius: 5px;
-    padding: 0;
-    max-width: 500px;
-    border: 1px solid #0e2b7b;
-}
-.PriceArea p {
-    color: #68f3ff;
-}
-
-.PriceArea h2 {
-    color: white;
-}
-
-.ServiceArea .card-title {
-    color: white;
-    font-size: 30px;
-}
-
-.card-img-top {
-    border-radius: 0;
-}
-
-@media (min-width: 768px) {
-
-      .BannerContainer #Banner{
-
-        height: 500px; /* Ensure the image covers the entire container */
-        object-position: 100% 15%;
-      }
-      
-      .Services{
-        position: relative;
-        background-color: #06112f;
-      }
-
-    .ServiceArea {
-        display: flex;
-        justify-content: center;
-    }
-
-    .AccordionArea {
-        width: 800px;
-
-    }
-    
-    .Services h1 {
-        font-family: 'Titillium Web';
-        text-align: center;
-        padding: 20px;
-        background-color: #06112f;
-        margin-bottom: 0;
-        color: #68f3ff;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 40px;
-    }
-    
-    .accordion-button:not(.collapsed) {
-        color: #68f3ff;
-        background-color: #29008a;
-    }
-    
-    .accordion-button.collapsed {
-        background-color: #0e2b7b;
-        color: #68f3ff;
-    }
-    
-}
-
-  

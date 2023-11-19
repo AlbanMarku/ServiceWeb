@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import welcomeImg from '../assets/welcome.jpg';
 import emergency from '../assets/emergency.png';
-import slide2 from '../assets/ad1.jpg';
+import slide2 from '../assets/testBanner.jpeg';
 import slide3 from '../assets/ad2.jpg';
 import '../styles/welcomeBanner.css';
 

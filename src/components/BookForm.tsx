@@ -1,13 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/no-unescaped-entities */
 import '../styles/bookForm.css';
 
-type Props = {
-  service: string;
-};
-
-export default function BookForm({ service }: Props) {
-  const greetings = `Hi! I would like to book the ${service} service. What would my quote be for the following:`;
+export default function BookForm() {
+  // const greetings = `Hi! I would like to book the ${service} service. What would my quote be for the following:`;
 
   return (
     <div className="BookForm">
@@ -23,7 +20,7 @@ export default function BookForm({ service }: Props) {
         </div>
         <div className="Section">
           <label htmlFor="message">Message</label>
-          <textarea value={greetings} id="message" name="message" required />
+          <textarea id="message" name="message" required />
         </div>
         <div className="Section">
           <button type="submit">Submit</button>

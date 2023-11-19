@@ -15,7 +15,7 @@ export default function Form() {
       </div>
       <div className="FormArea">
         <h1>{serviceName.toUpperCase()} SERVICE</h1>
-        <BookForm service={serviceName} />
+        <BookForm />
       </div>
     </div>
   );

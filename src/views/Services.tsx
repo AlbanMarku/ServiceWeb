@@ -3,6 +3,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/order */
 import serviceBanner from '../assets/serviceBanner.jpg';
+import rewire from '../assets/rewire.jpeg';
 import '../styles/services.css';
 import Accordion from 'react-bootstrap/Accordion';
 import serviceImg from '../assets/service.jpg';
@@ -31,7 +32,7 @@ export default function Services() {
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Rewiring Services</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={rewire} alt="service" />
                 <div className="ServiceItemDesc">
                   <p>
                     Invest in the safety and efficiency of your electrical infrastructure with our meticulous rewiring

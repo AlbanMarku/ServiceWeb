@@ -6,6 +6,7 @@ import { FaPhone, FaRegEnvelope, FaLocationDot } from 'react-icons/fa6';
 import Stack from 'react-bootstrap/Stack';
 import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 import { useState, useEffect } from 'react';
+import timeImg from '../assets/times.jpg';
 
 export default function ContactUs() {
   const [iconSize, setIconSize] = useState({});
@@ -64,6 +65,9 @@ export default function ContactUs() {
             <MarkerF position={center} />
           </GoogleMap>
         </LoadScript>
+      </div>
+      <div className="TimesArea">
+        <img id="timeImg" src={timeImg} alt="times" />
       </div>
     </div>
   );

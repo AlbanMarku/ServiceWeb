@@ -34,6 +34,10 @@
   padding-bottom: 20px;
 }
 
+#timeImg {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .ContactUs {
     display: flex;
@@ -70,5 +74,9 @@
     font-family: 'Titillium Web';
     font-weight: bold;
     font-size: 40px;
+  }
+
+  #timeImg {
+    width: 600px;
   }
 }

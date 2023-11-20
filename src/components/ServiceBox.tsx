@@ -3,8 +3,10 @@ import Button from 'react-bootstrap/Button';
 import CardGroup from 'react-bootstrap/CardGroup';
 import '../styles/serviceBox.css';
 import { useNavigate } from 'react-router-dom';
-import serviceImg from '../assets/service.jpg';
 import CardComp from './CardComp';
+import cooker from '../assets/cooker.jpg';
+import light from '../assets/upgrade.jpg';
+import rewire from '../assets/fault.jpg';
 // import AD from '../assets/ad1.jpg';
 
 export default function ServiceBox() {
@@ -19,21 +21,21 @@ export default function ServiceBox() {
       <div className="CardSection">
         <CardGroup className="CardArea">
           <CardComp
-            img={serviceImg}
+            img={cooker}
             title="Cooker Setup"
-            price="negotiable"
+            price="Negotiable"
             desc="Let us take care of your cooker installation needs with ease. Our skilled electricians, certified to meet UK standards, ensure a smooth and secure installation process."
           />
           <CardComp
-            img={serviceImg}
+            img={light}
             title="Lights"
-            price="negotiable"
+            price="Negotiable"
             desc="Transform your surroundings with our professional lighting services. Our skilled electricians, in accordance with UK standards, design and install lighting solutions tailored to your needs."
           />
           <CardComp
-            img={serviceImg}
+            img={rewire}
             title="Shed/Garage Rewire"
-            price="negotiable"
+            price="Negotiable"
             desc="Revitalize your shed or garage with our expert rewiring services. Our certified electricians, adhering to UK standards, ensure a safe and efficient power supply for your workspace."
           />
         </CardGroup>

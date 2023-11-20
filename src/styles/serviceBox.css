@@ -1,5 +1,6 @@
 .CardArea {
   background-color: #06112f;
+  padding: 0 10px;
 }
 
 .CardArea .Card {
@@ -25,7 +26,10 @@
   font-size: 40px;
 }
 
-.CardSection {
+.CardArea img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 40%;
 }
 
 .CardArea .bookButton {

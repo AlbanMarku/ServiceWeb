@@ -10,6 +10,12 @@ import serviceImg from '../assets/service.jpg';
 import Socials from '../components/Socials';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import socket from '../assets/socket.jpg';
+import cooker from '../assets/cooker.jpg';
+import fault from '../assets/fault.jpg';
+import upgrade from '../assets/upgrade.jpg';
+import eicr from '../assets/eicr.jpg';
+import light from '../assets/light.jpg';
 
 export default function Services() {
   return (
@@ -53,11 +59,11 @@ export default function Services() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Electrical Troubleshooting</Accordion.Header>
+            <Accordion.Header>Fault Finding</Accordion.Header>
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Electrical Troubleshooting</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={fault} alt="fault" />
                 <div className="ServiceItemDesc">
                   <p>
                     Trust us to swiftly pinpoint and solve electrical issues with our reliable fault finding services.
@@ -77,11 +83,11 @@ export default function Services() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Professional Socket Installation</Accordion.Header>
+            <Accordion.Header>Socket Installation</Accordion.Header>
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Professional Socket Installation</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={socket} alt="socket" />
                 <div className="ServiceItemDesc">
                   <p>
                     Upgrade your space with our expert socket installation services. Our certified electricians follow
@@ -106,7 +112,7 @@ export default function Services() {
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Effortless Cooker Setup</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={cooker} alt="cooker" />
                 <div className="ServiceItemDesc">
                   <p>
                     Let us take care of your cooker installation needs with ease. Our skilled electricians, certified to
@@ -130,7 +136,7 @@ export default function Services() {
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Electrical Safety Certification (EICR)</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={eicr} alt="service" />
                 <div className="ServiceItemDesc">
                   <p>
                     Ensure the safety of your property with our Electrical Installation Condition Report (EICR)
@@ -156,7 +162,7 @@ export default function Services() {
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Electric Board Upgrade Enhanced Safety, Upgraded Efficiency</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={upgrade} alt="service" />
                 <div className="ServiceItemDesc">
                   <p>
                     Opt for peace of mind with our consumer unit replacement services. Our certified electricians,
@@ -181,7 +187,7 @@ export default function Services() {
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Illuminate Your Space with Precision</h1>
-                <img src={serviceImg} alt="service" />
+                <img src={light} alt="service" />
                 <div className="ServiceItemDesc">
                   <p>
                     Transform your surroundings with our professional lighting services. Our skilled electricians, in

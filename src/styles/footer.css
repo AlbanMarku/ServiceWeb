@@ -1,81 +1,76 @@
 .Footer {
-    background-color: #111520;
+  background-color: #111520;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.PayIcons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.PayIcon {
+  width: 90px;
+}
+
+#MainLogo {
+  width: 170px;
+  border: solid 1px #68f3ff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.UsefulLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.UsefulLinks h2 {
+  color: #68f3ff;
+  font-family: 'Titillium Web';
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.UsefulLinks a {
+  color: #68f3ff;
+}
+
+.UsefulLinks .Links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .Footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: center;
-    padding-top: 50px;
-}
-
-.PayIcons {
-    display: flex;
-    justify-content: left;
     align-items: center;
-    gap: 20px;
-    width: fit-content;
-    margin-bottom: 50px;
-}
+    padding-top: 50px;
+  }
 
-.PayIcon {
-    width: 90px;
-}
-
-#MainLogo {
-    width: 170px;
-    border: solid 1px #68f3ff;
-    border-radius: 5px;
-    padding: 5px;
-
-}
-
-.UsefulLinks {
+  .UsefulLinks {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-}
-
-.UsefulLinks h2 {
+  .UsefulLinks a {
     color: #68f3ff;
-    font-family: 'Titillium Web';
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-weight: bold;
-}
-
-.UsefulLinks a {
-    color: #68f3ff;
-}
-
-.UsefulLinks .Links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-@media (min-width: 768px) {
-    .Footer {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        justify-content: center;
-        align-items: center;
-        padding-top: 50px;
-    }
-    
-    .UsefulLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    
-    
-    .UsefulLinks a {
-        color: #68f3ff;
-        text-align: center;
-    }
-
+    text-align: center;
+  }
 }

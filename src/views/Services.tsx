@@ -102,7 +102,7 @@ export default function Services() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Effortless Cooker Setup</Accordion.Header>
+            <Accordion.Header>Cooker Setup</Accordion.Header>
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Effortless Cooker Setup</h1>
@@ -177,7 +177,7 @@ export default function Services() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
-            <Accordion.Header>Light</Accordion.Header>
+            <Accordion.Header>Lights</Accordion.Header>
             <Accordion.Body>
               <div className="ServiceItem">
                 <h1>Illuminate Your Space with Precision</h1>

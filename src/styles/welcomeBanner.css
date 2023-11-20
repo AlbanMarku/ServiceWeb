@@ -57,7 +57,6 @@
   align-items: center;
 }
 
-
 @media (min-width: 768px) {
   .carousel-image-container {
     width: 100%; /* Set the width of the container to fill the Carousel.Item */
@@ -74,28 +73,31 @@
     height: 500px; /* Ensure the image covers the entire container */
     object-position: 50% 17%;
   }
-  
+
   .image-outer-container {
     position: relative;
   }
-  
+
   #But {
     display: none;
   }
-  
+
   #Contact {
     width: 50px;
   }
-  
+
   #But p {
     margin-bottom: -1px;
   }
-  
+
   .Emergency {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
+  #Slide2 {
+    object-position: 50% 50%;
+  }
 }

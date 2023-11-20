@@ -1,53 +1,53 @@
 .Parallax {
-    background-image: url("../assets/work1.jpg"); /* Replace with your background image URL */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-align: center;
+  background-image: url('../assets/work1.jpg'); /* Replace with your background image URL */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .ParallaxContent {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 
 .Parallax h1 {
-    font-family: 'Titillium Web';
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 0;
-    color: #68f3ff;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 40px;
+  font-family: 'Titillium Web';
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  color: #68f3ff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
 }
 
 @supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */ 
-    .Parallax {
-        background-attachment: scroll;
-    }
+  /* CSS specific to iOS devices */
+  .Parallax {
+    background-attachment: scroll;
   }
+}
 
 @media (min-width: 768px) {
-    .Parallax {
-        height: 700px;
-        background-position: 0% 0%;
-    }
-    
-    .ParallaxContent {
-        background-color: rgba(0, 0, 0, 0.719);
-        padding: 20px;
-        width: 600px;
-    }
+  .Parallax {
+    height: 700px;
+    background-position: 0% 0%;
+  }
 
-    .AboutUs p {
-        font-size: 18px;
-    }
+  .ParallaxContent {
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 20px;
+    width: 600px;
+  }
+
+  .AboutUs p {
+    font-size: 18px;
+  }
 }

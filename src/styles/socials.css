@@ -39,14 +39,11 @@
 .WhatsappContainer p {
   margin-bottom: -1px;
   color: white;
-
 }
 
 @media (min-width: 768px) {
   .Icons {
     justify-content: center;
     gap: 40px;
-
   }
-  
 }

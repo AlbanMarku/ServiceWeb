@@ -29,10 +29,7 @@ export default function CanvasComp() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <p>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-            etc.
-          </p>
+          <p>Problems with plumbing? Check out our new services!</p>
           <img src={plumbing} alt="plumbing service" />
           <Link style={{ width: '100%' }} to="/plumbingService">
             <Button className="CardButtons">View More</Button>

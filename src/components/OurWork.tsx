@@ -15,7 +15,7 @@ export default function OurWork() {
             <div className="custom-carousel-image-container">
               <img src={Work1} alt="Example one" className="custom-carousel-image" />
               <div className="image-overlay">
-                <p>Your Text</p>
+                <p>Rewire</p>
               </div>
             </div>
           </Carousel.Item>
@@ -23,7 +23,7 @@ export default function OurWork() {
             <div className="custom-carousel-image-container">
               <img src={Work2} alt="Example one" className="custom-carousel-image" />
               <div className="image-overlay">
-                <p>Your 3</p>
+                <p>Professional Service</p>
               </div>
             </div>
           </Carousel.Item>
@@ -31,7 +31,7 @@ export default function OurWork() {
             <div className="custom-carousel-image-container">
               <img src={Work3} alt="Example one" className="custom-carousel-image" />
               <div className="image-overlay">
-                <p>Your 2</p>
+                <p>Fault Fixing</p>
               </div>
             </div>
           </Carousel.Item>
@@ -39,7 +39,7 @@ export default function OurWork() {
             <div className="custom-carousel-image-container">
               <img src={Work4} alt="Example one" className="custom-carousel-image" />
               <div className="image-overlay">
-                <p>Your 1</p>
+                <p>Lights Installation</p>
               </div>
             </div>
           </Carousel.Item>

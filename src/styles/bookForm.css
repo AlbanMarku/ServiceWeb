@@ -1,55 +1,53 @@
 .BookForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
 
-  #contact-form {
-    width: 100%;
-  }
-  
-  .Section {
-    margin: 10px;
-    text-align: left;
-  }
-  
-  label {
-    display: block; /* Display labels above input fields */
-    margin-bottom: 5px;
-    color: #68f3ff;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: rgb(188, 188, 188);
-  }
-  
-  #message {
-    height: 400px;
-  }
+#contact-form {
+  width: 100%;
+}
 
-  .BookForm button {
-    background-color: #0e2b7b;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #0d6efd;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-  }
+.Section {
+  margin: 10px;
+  text-align: left;
+}
 
-  @media (min-width: 768px) {
-    .BookForm {
-        width: 600px;
-        margin: 0 auto;
-      }
-    
-    
+label {
+  display: block; /* Display labels above input fields */
+  margin-bottom: 5px;
+  color: #68f3ff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(188, 188, 188);
+}
+
+#message {
+  height: 400px;
+}
+
+.BookForm button {
+  background-color: #0e2b7b;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .BookForm {
+    width: 600px;
+    margin: 0 auto;
   }
+}

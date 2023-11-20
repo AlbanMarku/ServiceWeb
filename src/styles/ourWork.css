@@ -52,28 +52,26 @@
 }
 
 @media (min-width: 768px) {
+  .CarousalContainer {
+    background-color: #06112f;
+    display: flex;
+    justify-content: center;
+  }
 
-.CarousalContainer {
-  background-color: #06112f;
-  display: flex;
-  justify-content: center;
-}
-
-.custom-carousel {
-  width: 1000px;
-
-}
+  .custom-carousel {
+    width: 1000px;
+  }
   .custom-carousel-image-container {
     position: relative;
     width: 100%;
   }
-  
+
   .custom-carousel-image {
     width: 100%;
     object-fit: cover;
     object-position: 0% 30%;
   }
-  
+
   .image-overlay {
     position: absolute;
     bottom: 0;
@@ -86,7 +84,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .image-overlay p {
     text-align: center;
     margin-bottom: 0;

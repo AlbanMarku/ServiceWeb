@@ -16,7 +16,7 @@ export default function WelcomeBanner() {
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-image-container">
-            <img src={slide2} alt="Work 1" />
+            <img id="Slide2" src={slide2} alt="Work 1" />
           </div>
         </Carousel.Item>
         <Carousel.Item>

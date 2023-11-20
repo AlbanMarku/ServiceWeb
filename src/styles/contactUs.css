@@ -35,17 +35,15 @@
 }
 
 @media (min-width: 768px) {
-
   .ContactUs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  } 
+  }
 
   .ContactArea {
-    width: min(100%, 800px); 
-
+    width: min(100%, 800px);
   }
   .ContactItem {
     display: flex;
@@ -55,13 +53,13 @@
     color: white;
     margin: 0 40px;
   }
-  
+
   .ContactItem a {
     margin-top: 10px;
     color: #68f3ff;
     text-decoration: underline;
   }
-  
+
   .ContactUs h1 {
     text-align: center;
     padding: 20px;
@@ -73,5 +71,4 @@
     font-weight: bold;
     font-size: 40px;
   }
-  
 }

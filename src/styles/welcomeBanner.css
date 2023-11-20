@@ -57,6 +57,10 @@
   align-items: center;
 }
 
+#Slide2 {
+  object-position: 30% 50%;
+}
+
 @media (min-width: 768px) {
   .carousel-image-container {
     width: 100%; /* Set the width of the container to fill the Carousel.Item */

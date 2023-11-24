@@ -116,15 +116,21 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .ServiceItem img {
   height: 300px;
   width: 80%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .ServiceItem .BookButton {
+  width: 100%;
+}
+
+.ServiceItemDesc {
   width: 100%;
 }
 
@@ -172,5 +178,15 @@
 
   .ServiceItem img {
     width: 50%;
+  }
+
+  .ServiceItem .BookButton {
+    width: auto;
+  }
+
+  .ServiceItemDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

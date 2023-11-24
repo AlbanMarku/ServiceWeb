@@ -5,11 +5,17 @@
 import serviceBanner from '../assets/plumbing.png';
 import '../styles/services.css';
 import Accordion from 'react-bootstrap/Accordion';
-import serviceImg from '../assets/service.jpg';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+
 import Socials from '../components/Socials';
-import CardComp from '../components/CardComp';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import boiler from '../assets/boiler.jpg';
+import cylinder from '../assets/cylinder.jpg';
+import heating from '../assets/heating.jpg';
+import flushing from '../assets/flushing.jpg';
+import plumbing from '../assets/plumbing.jpg';
+import leak from '../assets/leak.jpg';
+import blockage from '../assets/blockage.jpg';
 
 export default function PlumbingService() {
   return (
@@ -28,55 +34,122 @@ export default function PlumbingService() {
       <div className="ServiceArea">
         <Accordion className="AccordionArea" alwaysOpen flush>
           <Accordion.Item id="item0" eventKey="0">
-            <Accordion.Header>Installation</Accordion.Header>
+            <Accordion.Header>Boiler Services</Accordion.Header>
             <Accordion.Body>
-              <Row xs={1} md={2} className="g-4 CardGroup">
-                {Array.from({ length: 4 }).map((_, idx) => (
-                  <Col className='d-flex justify-content-center align-items-center"' key={idx}>
-                    <CardComp title="example" price="£30-£40" desc="lorem15" img={serviceImg} />
-                  </Col>
-                ))}
-              </Row>
+              <div className="ServiceItem">
+                <h1>Boiler Services</h1>
+                <img src={boiler} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing boiler service.</p>
+                  <Link className="Brand" to="/form/boiler">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Gas Pipe Repair</Accordion.Header>
+          <Accordion.Item id="item0" eventKey="1">
+            <Accordion.Header>Cylinder Services</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              <div className="ServiceItem">
+                <h1>Cylinder Services </h1>
+                <img src={cylinder} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing cylinder service.</p>
+                  <Link className="Brand" to="/form/cylinder">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>Maintenance</Accordion.Header>
+          <Accordion.Item id="item0" eventKey="2">
+            <Accordion.Header>Heating Services</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              <div className="ServiceItem">
+                <h1>Heating Services</h1>
+                <img src={heating} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing heating service.</p>
+                  <Link className="Brand" to="/form/heating">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>De-clogging</Accordion.Header>
+          <Accordion.Item id="item0" eventKey="3">
+            <Accordion.Header>Flushing Heating</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              <div className="ServiceItem">
+                <h1>Flushing Heating</h1>
+                <img src={flushing} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing flushing service.</p>
+                  <Link className="Brand" to="/form/flushing">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="4">
-            <Accordion.Header>Emergency Callout</Accordion.Header>
+          <Accordion.Item id="item0" eventKey="4">
+            <Accordion.Header>Plumbing Maintenance</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              <div className="ServiceItem">
+                <h1>Plumbing Maintenance</h1>
+                <img src={plumbing} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing plumbing service.</p>
+                  <Link className="Brand" to="/form/plumbing">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item id="item0" eventKey="5">
+            <Accordion.Header>Leak Founding</Accordion.Header>
+            <Accordion.Body>
+              <div className="ServiceItem">
+                <h1>Leak Founding</h1>
+                <img src={leak} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing leak service.</p>
+                  <Link className="Brand" to="/form/leak">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item id="item0" eventKey="6">
+            <Accordion.Header>Blockage</Accordion.Header>
+            <Accordion.Body>
+              <div className="ServiceItem">
+                <h1>Blockage</h1>
+                <img src={blockage} alt="service" />
+                <div className="ServiceItemDesc">
+                  <p>Amazing blockage service.</p>
+                  <Link className="Brand" to="/form/blockage">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

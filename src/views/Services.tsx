@@ -272,13 +272,11 @@ export default function Services() {
                     reliable and precise electrical solutions. No task is too small; we ensure each detail is handled
                     with the same level of expertise and care.
                   </p>
-                  <div className="CardButtons">
-                    <Link className="Brand" to="/form/small-job">
-                      <Button variant="primary" className="BookButton">
-                        Book Now
-                      </Button>
-                    </Link>
-                  </div>
+                  <Link className="Brand" to="/form/small-job">
+                    <Button variant="primary" className="BookButton">
+                      Book Now
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Accordion.Body>

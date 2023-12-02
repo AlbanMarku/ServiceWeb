@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
-import { FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa6';
+import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebook } from 'react-icons/fa6';
 import { useState, useEffect } from 'react';
 import '../styles/socials.css';
 
@@ -31,7 +31,7 @@ export default function Socials() {
     <div className="Socials" id="Socials">
       <div className="Icons">
         <a href="https://wa.me/message/JVQ7EOQN4QRQH1" target="_blank" rel="noreferrer">
-          <FaWhatsapp size={iconSize} className="Icon" />
+          <FaFacebook size={iconSize} className="Icon" />
         </a>
         <a
           href="https://instagram.com/alwaysonelectrician?igshid=MWx1dDNleHk5Znhk&utm_source=qr"

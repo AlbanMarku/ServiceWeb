@@ -2,6 +2,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/order */
+import { Fab } from '@mui/material';
+import { FaWhatsapp } from 'react-icons/fa6';
 import serviceBanner from '../assets/plumbing.png';
 import '../styles/services.css';
 import Accordion from 'react-bootstrap/Accordion';
@@ -153,6 +155,11 @@ export default function PlumbingService() {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+        <Fab className="chat-icon" color="primary" aria-label="add">
+          <a className="chat-inner" href="https://wa.me/message/JVQ7EOQN4QRQH1" target="_blank" rel="noreferrer">
+            <FaWhatsapp color="white" size={25} />
+          </a>
+        </Fab>
       </div>
     </div>
   );

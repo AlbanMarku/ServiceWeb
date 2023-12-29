@@ -1,0 +1,15 @@
+.chat-icon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: green;
+}
+
+.chat-inner {
+}
+
+@media (min-width: 768px) {
+  .chat-icon {
+    right: 100px;
+  }
+}

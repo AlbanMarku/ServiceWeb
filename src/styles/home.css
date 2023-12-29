@@ -1,12 +1,16 @@
+.Home {
+  position: relative;
+}
+
 .chat-icon {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: green;
+  position: fixed !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  background-color: green !important;
 }
 
 @media (min-width: 768px) {
   .chat-icon {
-    right: 100px;
+    right: 100px !important;
   }
 }

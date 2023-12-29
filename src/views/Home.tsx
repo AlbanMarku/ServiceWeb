@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { Fab } from '@mui/material';
 import { FaWhatsapp } from 'react-icons/fa6';
 import WelcomeBanner from '../components/WelcomeBanner';
@@ -12,7 +11,7 @@ import '../styles/home.css';
 
 export default function Home() {
   return (
-    <div className="Home" style={{ position: 'relative' }}>
+    <div className="Home">
       <CanvasComp />
       <WelcomeBanner />
       <Socials />
